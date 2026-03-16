@@ -38,7 +38,7 @@ export function Contact() {
             Get In Touch
           </h2>
           <p className="text-neutral-400 max-w-2xl mx-auto">
-            Currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            Currently open for new opportunities. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
           </p>
         </motion.div>
 
@@ -51,9 +51,9 @@ export function Contact() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">Let's talk about your project</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Let&apos;s talk about your project</h3>
               <p className="text-neutral-400 mb-8 leading-relaxed">
-                I'm currently looking for new opportunities as a Software Development Engineer. 
+                I&apos;m currently looking for new opportunities as a Software Development Engineer. 
                 My inbox is always open for freelance inquiries, consulting, or full-time roles.
               </p>
             </div>

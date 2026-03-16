@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "../ui/Button";
+import Link from "next/link";
 import { portfolio } from "@/data/portfolio";
 
 const navLinks = [
@@ -48,11 +49,11 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 max-w-6xl flex items-center justify-between">
-        <a href="/" className="text-xl font-heading font-bold tracking-tight text-white flex items-center gap-2 group" aria-label="Abhishek.dev - Home">
+        <Link href="/" className="text-xl font-heading font-bold tracking-tight text-white flex items-center gap-2 group" aria-label="Abhishek.dev - Home">
           <span className="text-blue-500 group-hover:text-blue-400 transition-colors" aria-hidden="true">&lt;</span>
           {portfolio.profile.logoText}
           <span className="text-blue-500 group-hover:text-blue-400 transition-colors" aria-hidden="true">/&gt;</span>
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex flex-1 justify-center">

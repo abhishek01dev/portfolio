@@ -1,13 +1,13 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { portfolio } from "@/data/portfolio";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, ChevronDown, Download, Mail } from "lucide-react";
+import { ArrowRight, Download, Mail } from "lucide-react";
 
 export function Hero() {
-  const containerVariants: any = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -17,7 +17,7 @@ export function Hero() {
     },
   };
 
-  const itemVariants: any = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,

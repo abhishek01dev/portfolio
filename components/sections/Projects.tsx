@@ -4,8 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { portfolio } from "@/data/portfolio";
 import { ExternalLink, Github, FolderGit2 } from "lucide-react";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/Card";
-import { Badge } from "@/components/ui/Badge";
+import { Card, CardContent, CardFooter, CardHeader, CardDescription } from "@/components/ui/Card";
 
 const categories = ["All", "Fintech", "E-commerce", "HealthTech", "Real Estate", "EdTech", "SaaS"];
 
@@ -32,7 +31,7 @@ export function Projects() {
             Featured Projects
           </h2>
           <p className="text-neutral-400 max-w-2xl mx-auto">
-            A selection of complex applications I've built, emphasizing scalable architecture and elegant user experiences.
+            A selection of complex applications I&apos;ve built, emphasizing scalable architecture and elegant user experiences.
           </p>
         </motion.div>
 

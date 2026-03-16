@@ -1,18 +1,18 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { portfolio } from "@/data/portfolio";
 import { Badge } from "@/components/ui/Badge";
 import { Briefcase } from "lucide-react";
 
 export function Experience() {
-  const containerVariants: any = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
   };
 
-  const itemVariants: any = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, x: -20 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
   };
@@ -39,7 +39,7 @@ export function Experience() {
           viewport={{ once: true, margin: "-100px" }}
           className="relative border-l border-neutral-800 ml-4 md:ml-0"
         >
-          {portfolio.experience.map((exp, index) => (
+          {portfolio.experience.map((exp) => (
             <motion.li key={exp.id} variants={itemVariants} className="mb-12 ml-8 md:ml-12 relative group">
               {/* Timeline dot */}
               <div className="absolute -left-10 md:-left-[3.25rem] w-8 h-8 rounded-full bg-neutral-900 border border-neutral-700 flex items-center justify-center group-hover:border-blue-500 group-hover:text-blue-400 transition-colors">
